@@ -5,6 +5,8 @@
 
 ##  Overview
 
+<img src="img/cli.gif" style="width: 657px" alt="Example run of the script">
+
 ### Description
 
 This is a (working) example of how to use the Figma API to pull assets like SVG images, directly into your codebase. Through several requests to the Figma API, we parse the Figma document to drill down to the - in our case - Icon components that we want to export as SVG elements. We then download each SVG from the Figma AWS instance.
@@ -13,7 +15,7 @@ This is a (working) example of how to use the Figma API to pull assets like SVG 
 
 Consider the following structure in Figma:
 
-<img src="img/example.png" alt="Figma Eample"/>
+<img src="img/example.png" style="max-width: 75%" alt="Figma Eample"/>
 
 As you can see, we group our icons onto a single `page`. We then have different `frames` for our different Icon sets as we want to clearly distinguish them. Finally, each frame contains a lot of icons, each of which is defined as a `component` in Figma.
 
@@ -27,7 +29,7 @@ We are using multiple fetches to the API to grab what we need. A good thing to k
 
 A small overview:
 
-<img src="img/schematics.png" alt="Overview of the code schematics"/>
+<img src="img/schematics.png" style="max-width: 75%" alt="Overview of the code schematics"/>
 
 *(While writing this, I realise the data requested with the 2nd step and API call; should be available during the first call so this might be refactored)*
   
